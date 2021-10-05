@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="./css/style.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Glory:wght@300&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="./css/fontawesome/css/all.css" />
+    
+    <script src="./js/common.js"></script>
+
+    <title>João Felipe & Júlia - Vaquinha do amor</title>
+</head>
+
+<body>
+
+    <nav>
+        <label for="menu-items" id="menu">
+            <i class="fal fa-bars"></i>
+            <input type="checkbox" id="menu-items">
+            <ul>
+                <li>
+                    <a href="./index.html">
+                        Início
+                    </a>
+                </li>
+        
+                <li>
+                    <a href="./lista-de-presentes.html">
+                        Lista de presentes
+                    </a>
+                </li>
+        
+                <li>
+                    <a href="./confirmar-presenca.html">
+                        Confirme sua presença
+                    </a>
+                </li>
+        
+                <li>
+                    <a href="./faz-o-pix.html">
+                        Faz o PIX!
+                    </a>
+                </li>
+        
+            </ul>
+        </div>
+    </nav>
+
+    <div class="head donate">
+        <h1>Vaquinha do amor</h1>
+    </div>
+
+    <section id="page" class="mb-0">
+        <p>
+            Para aqueles que, por qualquer motivo, optaram por não nos presentear com nenhum item da lista de presentes, pensamos em oferecer uma outra possibilidade de mimo: cash, dindin, money, bufunfa, faz-me-rir, grana, capital 💰💰💰
+
+            <span class="separator"></span>
+        </p>
+    </section>
+
+    <h1 class="title">Passo a passo</h1>
+    <div id="passos">
+        <div class="passo">
+            <h2>
+                Escolha entre PIX ou PayPal
+            </h2>
+
+            <p>
+                Você pode nos presentear com qualquer quantia que desejar. Para faciliar o envio, disponibilizamos duas formas de transferência: PIX e PayPal.
+                <span></span>
+                Para fazer uma transferência via PIX, é só clicar no botão PIX abaixo, ler o QR Code ou utilizar a chave informada.
+                <span></span>
+                Porém, se você deseja nos presentear através do seu cartão de crédito, inclusive de forma parcelada, aperte o botão "PayPal" e siga as próximas instruções.
+            </p>
+        </div>
+        <div class="passo">
+            <h2>
+                Se você optar pelo PayPal...
+            </h2>
+
+            <p>
+                Caso você não conheça o PayPal e queria entender melhor, <a href="" id="what-is-paypal" onclick="openModal(event, 'more-about-paypal')">clique aqui</a>.
+                <span></span>
+                Após apertar o botão, uma nova janela vai ser aberta. Primeiro, digite a quantia que deseja nos presentar. Se você já conhece e deseja utilizar sua conta do PayPal para finalizar a transferência, é só clicar no botão "Doar com PayPal".
+                <span></span>
+                Se você deseja utilizar um cartão de débito ou crédito, aperte o botão "Doe usando um cartão", preencha as informações do seu cartão e pronto, receberemos imediatamente seu presente!
+            </p>
+        </div>
+        <div class="passo">
+            <h2>
+                Espere a nossa confirmação
+            </h2>
+
+            <p>
+                Depois da transferência, independente da escolha entre PIX e PayPal, receberemos o presente imediatamente.
+                <span></span>
+                Mesmo assim, enviaremos uma mensagem através do seu WhatsApp para confirmar a transferência, pra que você possa ficar tranquilo ✌.
+            </p>
+        </div>
+    </div>
+
+    <h2 class="title">Escolha</h2>
+    <div id="buttons">
+        <div class="button">
+            <div class="donate">
+                <input onclick="openModal(event, 'pix')" type="image" src="./img/btn-pix.png" name="submit" title="PayPal - Doação Segura">
+            </div>
+        </div>
+        <div class="button">
+            <form action="https://www.paypal.com/donate" method="post" target="_blank" class="donate">
+                <input type="hidden" name="business" value="V7N6FETU3XBME" />
+                <input type="hidden" name="no_recurring" value="1" />
+                <input type="hidden" name="item_name" value="Ajudar um jovem casal a realizar o sonho do casamento" />
+                <input type="hidden" name="currency_code" value="BRL" />
+                <input type="image" src="./img/btn-paypal.png" name="submit" title="PayPal - Doação Segura" alt="Faça doações com o botão do PayPal" />
+                <img alt="" src="https://www.paypal.com/pt_BR/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+        </div>
+    </div>
+
+    <span class="separator"></span>
+
+    <div class="modal" id="more-about-paypal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="title">
+                    Sobre o PayPal
+                </h2>
+                <span>&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>
+                    O PayPal é uma carteira digital criada em 1998 nso Estados Unidos. Desde a sua criação, tem sido uma das principais formas de pagamento online pelo mundo.
+                    
+                    <br><br>
+
+                    Com o PayPal, você pode pagar como quiser: basta adicionar seus cartões de crédito à sua carteira do PayPal. Quando quiser pagar, basta acessar sua conta com seu nome de usuário e senha e escolher qual deles quer usar.
+                    
+                    <br><br>
+
+                    É rápido!
+                    Com o PayPal, você finaliza sua compra em poucos cliques. Informe seu e-mail, sua senha, cofirme os dados do seu pagamento e pronto!
+
+                    É simples!
+                    Deixe sua carteira em casa e não se preocupe com os dados do seu cartão ou conta bancária quando for fazer uma compra. Com o PayPal, você só precisa do seu e-mail e de sua senha.
+
+                    <br><br>
+                    
+                    O PayPal é uma forma segura de pagar por sua compras online porque mantém seus dados financeiros protegidos e não os compartilha com os vendedores. Assim, você não precisa informar os números do seu cartão ou da sua conta para lojas e pessoas desconhecidas.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="pix">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="title">
+                    Nosso PIX
+                </h2>
+                <span>&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>
+                    O PayPal é uma forma segura de pagar por sua compras online porque mantém seus dados financeiros protegidos e não os compartilha com os vendedores. Assim, você não precisa informar os números do seu cartão ou da sua conta para lojas e pessoas desconhecidas.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

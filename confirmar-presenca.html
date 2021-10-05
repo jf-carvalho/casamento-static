@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="./css/style.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Glory:wght@300&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="./css/fontawesome/css/all.css" />
+    
+    <script src="./js/common.js"></script>
+
+    <title>João Felipe & Júlia - Confirme sua presença</title>
+</head>
+
+<body>
+
+    <nav>
+        <label for="menu-items" id="menu">
+            <i class="fal fa-bars"></i>
+            <input type="checkbox" id="menu-items">
+            <ul>
+                <li>
+                    <a href="./index.html">
+                        Início
+                    </a>
+                </li>
+        
+                <li>
+                    <a href="./lista-de-presentes.html">
+                        Lista de presentes
+                    </a>
+                </li>
+        
+                <li>
+                    <a href="./confirmar-presenca.html">
+                        Confirme sua presença
+                    </a>
+                </li>
+        
+                <li>
+                    <a href="./faz-o-pix.html">
+                        Faz o PIX!
+                    </a>
+                </li>
+        
+            </ul>
+        </div>
+    </nav>
+   
+   <div class="head presence">
+        <h1>Confirme sua presença</h1>
+    </div>
+
+    <section id="page">
+        <p>
+            Sua presença é muito importante para nós! Insira seu nome de convidado (igual ao do convite) no campo abaixo e aperte no botão. Se você estiver em um celular, o aplicativo do <i class="fab fa-whatsapp"></i> WhatsApp será aberto. Se estiver em um computador, o site WhatsApp Web será aberto em uma nova guia. Tudo que você precisa fazer é enviar a mensagem que será automaticamente escrita e pronto, sua presença está confirmada! <i class="fal fa-heart"></i>
+
+            <span class="separator"></span>
+        </p>
+
+        <div id="confirm-wrapper">
+            <div>
+                <input type="text" placeholder="Seu nome de convidado">
+            </div>
+            <button onclick="sendWppMessage(this.parentElement.querySelector('div input'))">CONFIRMAR <i class="fab fa-whatsapp"></i></button>
+        </div>
+
+        <div id="thanks-wrapper">
+            <h1 id="thanks">Muito obrigado <i class="fas fa-heart"></i> </h1>
+            <span class="separator2 mt-3"></span>
+        </div>
+    </section>
+
+</body>
+
+</html>
