@@ -30,8 +30,16 @@ $regular: "Glory";
   padding: 0;
 }
 
+.fab.fa-whatsapp{
+  font-size: 16px !important;
+}
+
 .mb-0 {
   margin-bottom: 0 !important;
+}
+
+.font-regular{
+  font-family: $regular !important;
 }
 
 .mt-3 {
@@ -383,6 +391,44 @@ nav {
 #wishlist {
   margin: 50px 0;
 
+  
+  .item.already{
+    position: relative;
+    &::after{
+      content: 'JÁ GANHAMOS!';
+      font-family: $regular;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      height: 100%;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      justify-content: center;
+      z-index: 999999;
+      font-size: 78px;
+      color: rgb(54,54,54);
+      transform: rotate(10deg);
+      font-weight: bold;
+    }
+    &::before{
+      content: '';
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: rgba(255,255,255,.5);
+      z-index: 999;
+    }
+  }
+
   .item {
     margin-bottom: 32px;
 
@@ -658,4 +704,16 @@ h3.title {
       }
     }
   }
+}
+
+#qrpix{
+  width: 200px;
+  padding: 30px;
+  padding-bottom: 0;
+}
+
+#map{
+  border: none;
+  display: block;
+  margin: 60px auto;
 }

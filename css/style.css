@@ -1,10 +1,19 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
 }
 
+.fab.fa-whatsapp {
+  font-size: 16px !important;
+}
+
 .mb-0 {
   margin-bottom: 0 !important;
+}
+
+.font-regular {
+  font-family: "Glory" !important;
 }
 
 .mt-3 {
@@ -339,6 +348,42 @@ nav #menu ul li a {
 #wishlist {
   margin: 50px 0;
 }
+#wishlist .item.already {
+  position: relative;
+}
+#wishlist .item.already::after {
+  content: "JÁ GANHAMOS!";
+  font-family: "Glory";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  z-index: 999999;
+  font-size: 78px;
+  color: #363636;
+  transform: rotate(10deg);
+  font-weight: bold;
+}
+#wishlist .item.already::before {
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 999;
+}
 #wishlist .item {
   margin-bottom: 32px;
 }
@@ -592,6 +637,18 @@ h3.title {
   text-align: center;
   font-family: "Glory";
   font-size: 22px;
+}
+
+#qrpix {
+  width: 200px;
+  padding: 30px;
+  padding-bottom: 0;
+}
+
+#map {
+  border: none;
+  display: block;
+  margin: 60px auto;
 }
 
 /*# sourceMappingURL=style.css.map */
