@@ -1,12 +1,41 @@
 window.onload = () => {
   setBg();
   getPicsPositionRight();
+
+  document.addEventListener("click", function(e){
+    if(e.target === document.getElementById("menu-items")){
+      const el = document.querySelectorAll("#menu ul li");
+      const d = window.getComputedStyle(el[0]).getPropertyValue("visibility");
+      if(d == 'hidden'){
+        setTimeout(function(){
+          Array.from(el).forEach(e => {
+            e.style.visibility = 'visible';
+          })
+        }, 100);
+      }else{
+        Array.from(el).forEach(e => {
+          e.style.visibility = 'hidden';
+        })
+      }
+    }
+  });
 };
 
 window.onresize = () => {
   setBg();
   getPicsPositionRight();
 };
+
+window.onscroll = () => {
+  const s = window.scrollY;
+  const i = document.getElementsByClassName('fa-bars')[0];
+
+  if(s >= 300){
+    i.style.color = "black";
+  }else{
+    i.style.color = "white";
+  }
+}
 
 const setBg = () => {
   const w = window.screen.width;
@@ -15,7 +44,6 @@ const setBg = () => {
 
 const getPicsPositionRight = () => {
   if(!document.querySelector('meta[name="pagename"]')){
-    console.log(1)
     return;
   }
 
