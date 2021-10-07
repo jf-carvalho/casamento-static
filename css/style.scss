@@ -25,6 +25,11 @@ $regular: "Glory";
   }
 }
 
+body{
+  // max-width: 1200px;
+  // margin: 0 auto;
+}
+
 section{
   overflow-x: hidden;
 }
@@ -378,14 +383,23 @@ nav {
 
   &.presence span {
     background-image: url("../img/head-presence.jpg");
+    @include for-size(phone-only){
+      background-position-x: 90%;
+    }
   }
 
   &.donate span{
     background-image: url("../img/head-donate.jpg");
+    @include for-size(phone-only){
+      background-position-x: 50%;
+    }
   }
 
   &.local span{
     background-image: url("../img/head-local.jpg");
+    @include for-size(phone-only){
+      background-position-x: 50%;
+    }
   }
 
   position: relative;
@@ -444,13 +458,18 @@ nav {
   width: 70%;
   margin: 35px auto;
   text-align: center;
-  margin-bottom: 30vh;
+  margin-bottom: 20vh;
 
   p {
     font-family: $regular;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.5;
-    margin: 64px 0;
+    margin: 32px 0;
+
+    @include for-size(tablet-landscape-up){
+      font-size: 18px;
+      margin: 64px 0;
+    }
 
     small {
       display: block;
@@ -586,7 +605,7 @@ nav {
   align-items: center;
   flex-direction: column;
 
-  height: 50px;
+  // height: 50px;
 
   button {
     margin: 0 10px;
@@ -634,6 +653,7 @@ nav {
 }
 
 #thanks-wrapper {
+  display: none;
   transition: all 0.5s;
   opacity: 0;
 

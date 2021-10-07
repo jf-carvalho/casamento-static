@@ -96,6 +96,7 @@ const sendWppMessage = input => {
   window.open(url);
 
   setTimeout(() => {
+    document.getElementById('thanks-wrapper').style.display = 'block';
     document.getElementById('thanks-wrapper').style.opacity = 1;
   }, 1000);
 }
