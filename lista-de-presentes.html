@@ -85,7 +85,44 @@
 
         <div id="wishlist">
 
-            <div class="item">
+            <label id="collapse-index-label" for="collapse-index">
+                <h3>Mostrar Índice <i class="fas fa-chevron-down"></i></h3>
+            </label>
+            <input type="checkbox" id="collapse-index" onchange="animateChevron(this)">
+
+            <div id="index">
+                <ul>
+                    <li>
+                        <a class="smoothscroll" href="#airfryer">Airfryer</a>
+                    </li>
+                    <li>
+                        <a class="smoothscroll" href="#mixer">Mixer</a>
+                    </li>
+                    <li>
+                        <a class="smoothscroll" href="#ferro">Ferro de passar</a>
+                    </li>
+                    <li>
+                        <a class="smoothscroll" href="#batedeira">Batedeira</a>
+                    </li>
+                    <li>
+                        <a class="smoothscroll" href="#jantar">Jogo de jantar</a>
+                    </li>
+                    <li>
+                        <a class="smoothscroll" href="#portapao">Porta pão</a>
+                    </li>
+                    <li>
+                        <a class="smoothscroll" href="#escorredor">Escorredor</a>
+                    </li>
+                    <li>
+                        <a class="smoothscroll" href="#sobremesa">Jogo de sobremesa</a>
+                    </li>
+                    <li>
+                        <a class="smoothscroll" href="#escada">Escada</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="item" id="airfryer">
                 <span class="title">Fritadeira Air Fryer Philco Gourmet Black</span>
                 <div class="all-wrapper">
                     <div class="pic-wrapper">
@@ -93,15 +130,13 @@
                     </div>
                     <div class="info">
                         <ul>
-                            <li>R$359,00</li>
                             <li class='store'>Comprar na <a target="_blank" href="https://www.magazineluiza.com.br/fritadeira-eletrica-sem-oleo-air-fryer-philco-gourmet-black-pfr15p-preto-32l/p/023329000/ep/frel/?&=&seller_id=">Magalu</a></li>
 
-                            <li>R$368,00</li>
-                            <li class='store'>Comprar na <a target="_blank" href="https://www.casasbahia.com.br/fritadeira-air-fry-philco-pfr15p-gourmet-black-4l-preto-55018629.html">Magalu</a></li>
+                            <li class='store'>Comprar nas <a target="_blank" href="https://www.casasbahia.com.br/fritadeira-air-fry-philco-pfr15p-gourmet-black-4l-preto-55018629.html">Casas Bahia</a></li>
                         </ul>
                         
                         <p class="comment">
-                            Às vezes, o cardápio vegetariano precisa de uma boa e velha fritura para a satisfação dos paladares. E nada melhor para fritar uma couve-flor empanada do que uma airfryer!
+                            Às vezes, o cardápio vegetariano precisa da boa e velha fritura para a satisfação dos paladares. E nada melhor para fritar uma couve-flor empanada do que uma airfryer!
                         </p>
                     </div>
                 </div>
@@ -109,47 +144,176 @@
 
             <span class="separator2"></span>
 
-            <div class="item already">
-                <span class="title">Ferro a Vapor Black e Decker FX2700</span>
+            <div class="item" id="mixer">
+                <span class="title">Mixer Britânia preto 3 em 1 200W</span>
                 <div class="all-wrapper">
                     <div class="info">
                         <ul>
-                            <li>R$128,25</li>
-                            <li class='store'>Comprar na <a target="_blank" href="https://www.americanas.com.br/produto/2669425326?opn=YSMESP&sellerid=27036886000180&voltagem=110V">Americanas</a></li>
+                            <li class='store'>Comprar nas <a target="_blank" href="https://www.casasbahia.com.br/mixer-britania-3-em-1-com-triturador-de-alimento-e-batedor-de-claras-200w-411048.html">Casas Bahia</a></li>
 
-                            <li>R$121,50</li>
-                            <li class='store'>Comprar na <a target="_blank" href="https://www.magazineluiza.com.br/ferro-a-vapor-black-decker-fx2700-anti-gotejamento/p/gcdejc2bd4/ep/ferr/?&seller_id=mundoautomacao">Magalu</a></li>
+                            <li class='store'>Comprar na <a target="_blank" href="https://www.magazineluiza.com.br/mixer-britania-preto-200w-tritura-2-2-velocidades/p/204436400/ep/mixe/?&seller_id=magazineluiza&utm_source=google&utm_medium=pla&utm_campaign=&partner_id=58949&gclid=Cj0KCQjwqKuKBhCxARIsACf4XuFOz4TbuRhmI6uloC8WhAU-Cpv2JQTi7yk27qlBB24jjkkXlRqTklYaAveVEALw_wcB&gclsrc=aw.ds">Magalu</a></li>
+                        </ul>
+                        
+                        <p class="comment">
+                            Pense num casal que ama sucos. Se pensou em nós, acertou! Às vezes, lavar um copo de liquidificador é um preço alto demais. E é aí que entra a praticidade de um mixer.
+                        </p>
+                    </div>
+                    <div class="pic-wrapper">
+                        <img src="./img/wishlist/mixer.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <span class="separator2"></span>
+
+            <div class="item" id="ferro">
+                <span class="title">Ferro de passar roupa Black Decker FX2700</span>
+                <div class="all-wrapper">
+                    <div class="pic-wrapper">
+                        <img src="./img/wishlist/ferro.png">
+                    </div>
+                    <div class="info">
+                        <ul>
+                            <li class='store'>Comprar na <a target="_blank" href="https://www.americanas.com.br/produto/2737051478?sellerId=27036886000180&opn=YSMESP&voltage=220V&cross%20docking=0&cor=%C3%9Anica">Americanas</a></li>
+
+                            <li class='store'>Comprar no <a target="_blank" href="https://produto.mercadolivre.com.br/MLB-1933170883-ferro-a-vapor-black-decker-fx2700-anti-gotejamento-oferta-_JM?matt_tool=18956390&utm_source=google_shopping&utm_medium=organic">Mercado Livre</a></li>
                         </ul>
                         
                         <p class="comment">
                             Para tudo, existe uma primeira vez. O noivo diz prometer que, com um ferro desse, vai começar a passar suas camisetas. Quem sabe, um dia, comece a passar até as calças.
                         </p>
                     </div>
+                </div>
+            </div>
+
+            <span class="separator2"></span>
+
+            <div class="item" id="batedeira">
+                <span class="title">Batedeira Mondial preta B44B 400W</span>
+                <div class="all-wrapper">
+                    <div class="info">
+                        <ul>
+                            <li class='store'>Comprar na <a target="_blank" href="https://www.casaevideo.com.br/batedeira-de-mesa-mondial-pratica-b44b-400w-3-velocidades-preta-127v/p?idsku=20406&gclid=Cj0KCQjwqKuKBhCxARIsACf4XuG4W8vtS00SeYoUBy4DBQ4tgQ44nsnjlUnrkTsAacnlFam1vmTit9gaArjqEALw_wcB">Casa & Video</a></li>
+
+                            <li class='store'>Comprar na <a target="_blank" href="https://www.lebiscuit.com.br/batedeira-mondial-pratica-b-44-b-preta-127v-5107265/p">Le Biscuit</a></li>
+                        </ul>
+                        
+                        <p class="comment">
+                            Para adoçar o amargo da vida e servir deliciosos bolinhos de cafés da tarde para vocês, nossos visitantes, precisaremos de uma bela e eficiente batedeira. Pense nesse presente como um investimento!
+                        </p>
+                    </div>
                     <div class="pic-wrapper">
-                        <img src="./img/wishlist/ferro.png">
+                        <img src="./img/wishlist/batedeira.jpg">
                     </div>
                 </div>
             </div>
 
             <span class="separator2"></span>
 
-            <div class="item">
-                <span class="title">Panela de pressão Tramontina Grafite 4,5 litros</span>
+            <div class="item" id="jantar">
+                <span class="title">Aparelho de jantar ryo raízes com 20 peças</span>
                 <div class="all-wrapper">
                     <div class="pic-wrapper">
-                        <img src="./img/wishlist/panela-pressao.png">
+                        <img src="./img/wishlist/pratos.png">
                     </div>
                     <div class="info">
                         <ul>
-                            <li>R$169,90</li>
-                            <li class='store'>Comprar nas <a target="_blank" href="https://www.casasbahia.com.br/panela-de-pressao-45-l-tramontina-vancouver-com-fechamento-externo-revestimento-antiaderente-starflon-t1-e-tampa-polida-grafite-6346419/p/6346419?utm_medium=Cpc&utm_source=google_freelisting&IdSku=6346419&idLojista=10037">Casas Bahia</a></li>
+                            <li class='store'>Comprar no <a target="_blank" href="https://www.extra.com.br/aparelho-de-jantar-ryo-raizes-20-pecas-oxford-1518348657/p/1518348657?utm_medium=cpc&utm_source=GP_PLA&IdSku=1518348657&idLojista=35556&utm_campaign=3P_UTLD_padrao&gclid=Cj0KCQjwtrSLBhCLARIsACh6RmhaftvD3koLK2gug86iUKYCEEKsuolhjTdw0u0bXCPRINgXuxLXfmwaAsc5EALw_wcB ">Extra</a></li>
 
-                            <li>R$199,90</li>
-                            <li class='store'>Comprar na <a target="_blank" href="https://www.casaevideo.com.br/panela-de-pressao-4-5l-antiaderente-fechamento-externo-vancouver-tramontina-grafite/p?idsku=1966">Casa & Video</a></li>
+                            <li class='store'>Comprar nas <a target="_blank" href="https://www.casasbahia.com.br/aparelho-de-jantar-ryo-raizes-20-pecas-oxford-1518348657/p/1518348657?utm_medium=Cpc&utm_source=google_freelisting&IdSku=1518348657&idLojista=35556 ">Casas Bahia</a></li>
+
+                            <li class='store'>Comprar no <a target="_blank" href="https://www.extralar.com.br/parelho-de-jantar-ryo-raizes-20-pecas-oxford?utm_source=google&utm_medium=Shopping&utm_campaign=parelho-de-jantar-ryo-raizes-20-pecas-oxford&inStock">Extra Lar</a></li>
                         </ul>
                         
                         <p class="comment">
-                            Tempo é vida. E é por isso que ninguém merece passar uma hroa e meia cozinhando feijão por conta de uma panela de pressão de qualidade duvidosa. Não é o caso dessa super tramontina!
+                            Para lindas visitas, um lindo jogo de jantar! Queremos recebê-los com tudo o que há de melhor. E este jogo específico fez nossos olhos brilharem.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <span class="separator2"></span>
+
+            <div class="item" id="portapao">
+                <span class="title">Porta pão em Pinus</span>
+                <div class="all-wrapper">
+                    <div class="info">
+                        <ul>
+                            <li class='store'>Comprar na <a target="_blank" href="https://shopee.com.br/Porta-P%C3%A3o-PINUS-G-i.333632427.8373407624?sp_atk=c826a158-f137-4e2c-b7de-8aef7fc3ac89 ">Shopee</a></li>
+                        </ul>
+                        
+                        <p class="comment">
+                            Pão, pão, pão e mais pão. Seja comprado ou feito em casa, pão é o alimento principal do noivo. E nada mais acalantador para um amante de pães como utensílios que fazem parte deste universo panificado.
+                        </p>
+                    </div>
+                    <div class="pic-wrapper">
+                        <img src="./img/wishlist/portapao.png">
+                    </div>
+                </div>
+            </div>
+
+            <span class="separator2"></span>
+
+            <div class="item" id="escorredor">
+                <span class="title">Escorredor de madeira teca dobrável linha black</span>
+                <div class="all-wrapper">
+                    <div class="pic-wrapper">
+                        <img src="./img/wishlist/escorredor.png">
+                    </div>
+                    <div class="info">
+                        <ul>
+                            <li class='store'>Comprar na <a target="_blank" href="https://shopee.com.br/Escorredor-Dobravel-Madeira-Teca-Linha-Black-Stolf-607bl-i.378611468.10300100132?sp_atk=b05c51f5-82aa-47d7-8bbe-af245e054430">Shopee</a></li>
+                            
+                            <li class='store'>Comprar no <a target="_blank" href="https://produto.mercadolivre.com.br/MLB-1467273654-escorredor-de-loucas-dobravel-em-madeira-teca-black-stolf-_JM?matt_tool=40168140&matt_word=&matt_source=google&matt_campaign_id=14302215507&matt_ad_group_id=134553697108&matt_match_type=&matt_network=g&matt_device=c&matt_creative=539425477636&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=114092322&matt_product_id=MLB1467273654&matt_product_partition_id=1403983331189&matt_target_id=pla-1403983331189&gclid=CjwKCAjwq9mLBhB2EiwAuYdMtdbRAZfrZMOdWju11Qf_Tvz-YbeWz09LkcVcOD7lFjrk4aqCv4PXOBoCDj8QAvD_BwE">Mercado Livre</a></li>
+                        </ul>
+                        
+                        <p class="comment">
+                            Talvez você já tenha notado o gosto amadeirado do casal. Queremos que nosso cantinho traga um arzinho de natureza. Por isso, até nosso escorredor é feito de madeira! Lindo, não é?
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <span class="separator2"></span>
+
+            <div class="item" id="sobremesa">
+                <span class="title">Jogo de sobremesa diamond transparente com 6 taças</span>
+                <div class="all-wrapper">
+                    <div class="info">
+                        <ul>
+                            <li class='store'>Comprar na <a target="_blank" href="https://shopee.com.br/Jogo-06-Ta%C3%A7as-Sobremesa-Sorvete-310ml-Diamond-Transparente-i.406093328.11410785150?sp_atk=1071b874-296a-4903-bfc7-d0e9667df50d ">Shopee</a></li>
+                            
+                            <li class='store'>Comprar no <a target="_blank" href="https://produto.mercadolivre.com.br/MLB-1916803562-conjunto-de-tacas-sobremesa-6-unid-coquetel-diamond-310ml-_JM?matt_tool=40168140&matt_word=&matt_source=google&matt_campaign_id=14302215507&matt_ad_group_id=134553697108&matt_match_type=&matt_network=g&matt_device=c&matt_creative=539425477636&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=239654409&matt_product_id=MLB1916803562&matt_product_partition_id=1403983331189&matt_target_id=pla-1403983331189&gclid=CjwKCAjwq9mLBhB2EiwAuYdMtUcEEF3RHHBnBVf6vVzSgXpAr-PIKOs_URHjN0VGEhly4J5jUtYJbxoC7CAQAvD_BwE ">Mercado Livre</a></li>
+                        </ul>
+                        
+                        <p class="comment">
+                            Falou em João e Júlia, falou em doce. Pode ter certeza que, escolhendo nos presentear com essas lindas taças, seu presente será um dos mais usados em nossa casa.
+                        </p>
+                    </div>
+                    <div class="pic-wrapper">
+                        <img src="./img/wishlist/tacas.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <span class="separator2"></span>
+
+            <div class="item" id="escada">
+                <span class="title">Escada de alumínio articulada 4x3 suprema pro com 12 degraus</span>
+                <div class="all-wrapper">
+                    <div class="pic-wrapper">
+                        <img src="./img/wishlist/escada.png">
+                    </div>
+                    <div class="info">
+                        <ul>
+                            <li class='store'>Comprar nas <a target="_blank" href="https://www.casasbahia.com.br/escada-articulada-4x3-suprema-pro-12-degraus-aluminio-1508635064/p/1508635064?utm_medium=Cpc&utm_source=google_freelisting&IdSku=1508635064&idLojista=36083 ">Casas Bahia</a></li>
+                            
+                            <li class='store'>Comprar na <a target="_blank" href="https://www.magazineluiza.com.br/escada-articulada-4x3-suprema-pro-12-degraus-aluminio/p/bd3ghb8b6c/cj/csfe/?&seller_id=sodimachomecenter&utm_source=google&utm_medium=pla&utm_campaign=&partner_id=54222&gclid=Cj0KCQjwtrSLBhCLARIsACh6Rmj_XbRYw8uM3V1zqhRbLZ94BtA56RJt_MA5nksC25VrNKusJ62n5dAaAqfBEALw_wcBgclsrc=aw.ds ">Magalu</a></li>
+                        </ul>
+                        
+                        <p class="comment">
+                            Pintar, consertar, trocar, mudar de lugar. São muitos os momentos da vida cotidiana que exigem altura. Por isso, uma escada eficiente como essa é uma mão na roda para o casal de baixinhos, não acha?
                         </p>
                     </div>
                 </div>

@@ -137,3 +137,13 @@ const closeModal = modal => {
     modal.style.display = 'none';
   }, 100);
 }
+
+const animateChevron = checkbox => {
+  const chevron = document.querySelector("#collapse-index-label i");
+  
+  if(checkbox.checked){
+    chevron.style.transform = "rotate(180deg)";
+  }else{
+    chevron.style.transform = "rotate(0)";
+  }
+}
