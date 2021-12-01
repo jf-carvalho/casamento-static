@@ -506,7 +506,7 @@ nav {
       z-index: 999999;
       font-size: 50px;
       color: rgb(54,54,54);
-      transform: rotate(10deg);
+      // transform: rotate(10deg);
       font-weight: bold;
 
       @include for-size(tablet-landscape-up){
@@ -848,6 +848,7 @@ h3.title {
     font-family: $regular;
     font-size: 24px;
     margin-bottom: 8px;
+    cursor: pointer;
   }
 }
 
@@ -874,5 +875,5 @@ h3.title {
 }
 
 #collapse-index:checked ~#index{
-  height: 300px;
+  height: 510px;
 }

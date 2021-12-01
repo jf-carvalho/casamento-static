@@ -475,7 +475,6 @@ nav #menu ul li a {
   z-index: 999999;
   font-size: 50px;
   color: #363636;
-  transform: rotate(10deg);
   font-weight: bold;
 }
 @media (min-width: 900px) {
@@ -797,6 +796,7 @@ h3.title {
   font-family: "Glory";
   font-size: 24px;
   margin-bottom: 8px;
+  cursor: pointer;
 }
 
 #collapse-index {
@@ -821,7 +821,7 @@ h3.title {
 }
 
 #collapse-index:checked ~ #index {
-  height: 300px;
+  height: 510px;
 }
 
 /*# sourceMappingURL=style.css.map */
