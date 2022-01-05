@@ -212,6 +212,17 @@ nav {
   position: fixed;
   z-index: 2;
 }
+nav.gallery i {
+  color: black !important;
+}
+@media (min-width: 900px) {
+  nav.gallery a {
+    color: black !important;
+  }
+}
+nav.gallery #menu ul li::after {
+  background-color: black;
+}
 @media (min-width: 900px) {
   nav {
     position: absolute;
@@ -354,6 +365,12 @@ nav #menu ul li a {
   height: 100%;
   animation: zoom 30s infinite;
 }
+.head.gallery h1 {
+  color: black;
+}
+.head.gallery::before {
+  background: none;
+}
 .head.wishlist span {
   background-image: url("../img/head-wishlist.jpg");
   background-position: 50% 20%;
@@ -422,6 +439,24 @@ nav #menu ul li a {
   background-image: url("../img/separator2.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
+}
+
+#gallery {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#gallery div {
+  width: calc(100% - 5px);
+}
+@media (min-width: 900px) {
+  #gallery div {
+    width: calc(33.333% - 5px);
+  }
+}
+#gallery div img {
+  width: 100%;
 }
 
 #page {
@@ -824,4 +859,4 @@ h3.title {
   height: 540px;
 }
 
-/*# sourceMappingURL=Style.css.map */
+/*# sourceMappingURL=style.css.map */

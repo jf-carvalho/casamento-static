@@ -229,6 +229,23 @@ section{
 }
 
 nav {
+
+  &.gallery{
+    i{
+      color: black !important;
+    }
+
+    @include for-size(tablet-landscape-up){
+      a{
+        color: black !important;
+      }
+    }
+
+    #menu ul li::after {
+      background-color: black;
+    }
+  }
+
   max-width: 100vw;
   width: 100%;
   height: 80px;
@@ -377,6 +394,16 @@ nav {
     animation: zoom 30s infinite;
   }
 
+  &.gallery{
+    h1{
+      color: black;
+    }
+
+    &::before{
+      background: none;
+    }
+  }
+
   &.wishlist span{
     background-image: url("../img/head-wishlist.jpg");
     background-position: 50% 20%;
@@ -455,7 +482,27 @@ nav {
   background-repeat: no-repeat;
 }
 
+#gallery{
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+  div{
+    width: calc(100% - 5px);
+
+    @include for-size(tablet-landscape-up){
+      width: calc(33.333% - 5px);
+    }
+
+    img{
+      width: 100%;
+    }
+  }
+}
+
 #page {
+
   width: 90%;
   margin: 35px auto;
   text-align: center;
